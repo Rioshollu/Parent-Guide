@@ -1,12 +1,11 @@
-import { Button
- } from "react-bootstrap";
+import HomePage from "./pages/home-page";
 
- function App() {
-    return (
-        <>
-            <Button variant="primary">Uji Coba</Button>
-        </>
-    )
- }
+function App() {
+  return (
+    <>
+      <HomePage />
+    </>
+  );
+}
 
- export default App;
+export default App;
