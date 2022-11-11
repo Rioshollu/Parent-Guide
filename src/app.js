@@ -1,12 +1,11 @@
-import { Button
- } from "react-bootstrap";
+import Footer from "./component/footer";
 
- function App() {
-    return (
-        <>
-            <Button variant="primary">Uji Coba</Button>
-        </>
-    )
- }
+function App() {
+  return (
+    <>
+      <Footer />
+    </>
+  );
+}
 
- export default App;
+export default App;
