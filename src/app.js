@@ -1,12 +1,11 @@
-import { Button
- } from "react-bootstrap";
+import NavBar from './assets/navbar';
 
- function App() {
-    return (
-        <>
-            <Button variant="primary">Uji Coba</Button>
-        </>
-    )
- }
+function App() {
+  return (
+    <>
+      <NavBar />
+    </>
+  );
+}
 
- export default App;
+export default App;
