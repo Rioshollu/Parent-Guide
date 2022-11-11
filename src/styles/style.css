@@ -1,5 +1,24 @@
+@import "./components/content.css";
+@import "./components/search-bar.css";
 @import "./components/footer.css";
 
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
 * {
-  margin: 0 auto;
+  padding: 0;
+  margin: 0 ;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+#root {
+  background-color: #f5f0d7;
 }
