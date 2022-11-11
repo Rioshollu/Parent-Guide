@@ -1,3 +1,9 @@
+main {
+  width: 100%;
+  margin: 20px auto;
+  padding: 10px;
+}
+
 .title-populer {
   font-weight: 600;
   text-align: center;
