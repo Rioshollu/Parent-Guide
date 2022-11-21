@@ -71,13 +71,20 @@ hr {
 }
 
 .content-pengaduan {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 5px;
   background-color: #ffffff;
   width: 60% !important;
   text-align: center;
   box-shadow: 10px 10px 20px 10px rgba(0, 0, 0.2, 0.2);
+}
+
+.title-contact {
+  text-align: start;
+}
+
+.contact-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 5px;
 }
 
 .contact-wrapper {

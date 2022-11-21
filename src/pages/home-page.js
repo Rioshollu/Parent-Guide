@@ -81,31 +81,38 @@ function HomePage() {
         <Row className="mt-5 pb-5 content-wrapper">
           <h1 className="content-header">Layanan Pengaduan</h1>
           <div className="p-5 mt-3 content-pengaduan">
-            <div className="contact-wrapper">
-              <div>
-                <BsTelephone size={25}></BsTelephone>
-              </div>
-              <div className="contact-content">
-                <h4>Telepon</h4>
-                <p>110001111</p>
-              </div>
+            <div className="title-contact">
+              <h4>Komnas Perlindungan Anak</h4>
+              <p>Jl. Teuku Umar No. 10 Gondangdia Menteng Jakarta Pusat DKI Jakarta, Indonesia</p>
             </div>
-            <div className="contact-wrapper">
-              <div>
-                <TfiEmail size={30}></TfiEmail>
+            <hr></hr>
+            <div className="contact-list">
+              <div className="contact-wrapper">
+                <div>
+                  <BsTelephone size={25}></BsTelephone>
+                </div>
+                <div className="contact-content">
+                  <h4>Telepon</h4>
+                  <p>021 31900659</p>
+                </div>
               </div>
-              <div className="contact-content">
-                <h4>Email</h4>
-                <p>parentguide@gmail.com</p>
+              <div className="contact-wrapper">
+                <div>
+                  <TfiEmail size={30}></TfiEmail>
+                </div>
+                <div className="contact-content">
+                  <h4>Email</h4>
+                  <p>pengaduan@kpai.go.id</p>
+                </div>
               </div>
-            </div>
-            <div className="contact-wrapper">
-              <div>
-                <BsChatLeftText size={25}></BsChatLeftText>
-              </div>
-              <div className="contact-content">
-                <h4>SMS</h4>
-                <p>110001111</p>
+              <div className="contact-wrapper">
+                <div>
+                  <BsChatLeftText size={25}></BsChatLeftText>
+                </div>
+                <div className="contact-content">
+                  <h4>FAX</h4>
+                  <p>021 3900833</p>
+                </div>
               </div>
             </div>
           </div>
