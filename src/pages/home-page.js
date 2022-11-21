@@ -1,6 +1,8 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import { Container, Row, Col, Card } from "react-bootstrap";
 import artikelImage from "../assets/artikel-image.png";
+import { BsTelephone, BsChatLeftText } from "react-icons/bs";
+import { TfiEmail } from "react-icons/tfi";
 
 function HomePage() {
   return (
@@ -78,18 +80,33 @@ function HomePage() {
         </Row>
         <Row className="mt-5 pb-5 content-wrapper">
           <h1 className="content-header">Layanan Pengaduan</h1>
-          <div className="p-5 content-pengaduan">
-            <div>
-              <h4>Telepon</h4>
-              <p>110001111</p>
+          <div className="p-5 mt-3 content-pengaduan">
+            <div className="contact-wrapper">
+              <div>
+                <BsTelephone size={25}></BsTelephone>
+              </div>
+              <div className="contact-content">
+                <h4>Telepon</h4>
+                <p>110001111</p>
+              </div>
             </div>
-            <div>
-              <h4>Email</h4>
-              <p>ParentGuide@gmail.com</p>
+            <div className="contact-wrapper">
+              <div>
+                <TfiEmail size={30}></TfiEmail>
+              </div>
+              <div className="contact-content">
+                <h4>Email</h4>
+                <p>parentguide@gmail.com</p>
+              </div>
             </div>
-            <div>
-              <h4>SMS</h4>
-              <p>2211188</p>
+            <div className="contact-wrapper">
+              <div>
+                <BsChatLeftText size={25}></BsChatLeftText>
+              </div>
+              <div className="contact-content">
+                <h4>SMS</h4>
+                <p>110001111</p>
+              </div>
             </div>
           </div>
         </Row>

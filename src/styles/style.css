@@ -33,6 +33,10 @@
 }
 
 /* Artikel */
+.card {
+  border: none !important;
+}
+
 .card-title {
   font-weight: 600 !important;
   text-align: center;
@@ -69,7 +73,31 @@ hr {
 .content-pengaduan {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 5px;
   background-color: #ffffff;
   width: 60% !important;
   text-align: center;
+  box-shadow: 10px 10px 20px 10px rgba(0, 0, 0.2, 0.2);
+}
+
+.contact-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 2px solid #7d7d7d;
+  border-radius: 10px;
+  padding: 10px 5px 10px 0px;
+}
+
+.contact-wrapper p {
+  word-wrap: break-word;
+  margin-bottom: 0;
+}
+
+.contact-wrapper h4 {
+  margin-bottom: 5px;
+}
+
+.contact-content {
+  width: 50%;
 }
