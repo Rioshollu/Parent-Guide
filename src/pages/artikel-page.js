@@ -8,8 +8,38 @@ function ArtikelPage() {
     <>
       <Container>
         <SearchBar />
-        <Row>
-          <h1 className="title-populer">Artikel</h1>
+        <Row className="p-3">
+          <h1 className="content-header">Artikel</h1>
+          <hr></hr>
+          <Col>
+            <Card>
+              <img className="artikel-image" src={artikelImage} alt="Artikel Image" />
+              <div className="p-2 m-1">
+                <Card.Title>Lorem ipsum dolor sit amet</Card.Title>
+                <Card.Text>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur</Card.Text>
+              </div>
+            </Card>
+          </Col>
+          <Col>
+            <Card>
+              <img className="artikel-image" src={artikelImage} alt="Artikel Image" />
+              <div className="p-2 m-1">
+                <Card.Title>Lorem ipsum dolor sit amet</Card.Title>
+                <Card.Text>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur</Card.Text>
+              </div>
+            </Card>
+          </Col>
+          <Col>
+            <Card>
+              <img className="artikel-image" src={artikelImage} alt="Artikel Image" />
+              <div className="p-2 m-1">
+                <Card.Title>Lorem ipsum dolor sit amet</Card.Title>
+                <Card.Text>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur</Card.Text>
+              </div>
+            </Card>
+          </Col>
+        </Row>
+        <Row className="p-3">
           <Col>
             <Card>
               <img className="artikel-image" src={artikelImage} alt="Artikel Image" />
