@@ -1,6 +1,7 @@
 @import "./components/content.css";
 @import "./components/search-bar.css";
 @import "./components/footer.css";
+@import "./components/detail.css";
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
