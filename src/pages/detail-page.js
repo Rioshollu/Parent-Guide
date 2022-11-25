@@ -26,7 +26,7 @@ function DetailPage() {
           </div>
           <Card className="detail-credit mx-auto">
             <Card.Body>
-              <Card.Title>Sumber Artikel</Card.Title>
+              <Card.Title className="text-end">Sumber Artikel</Card.Title>
               <Card.Text>Lorem Ipsum is simply dummy text of the printing and typesetting industry</Card.Text>
             </Card.Body>
           </Card>
