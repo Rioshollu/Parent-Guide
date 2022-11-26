@@ -1,10 +1,24 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
+import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import artikelImage from "../assets/artikel-image.png";
 import { BsTelephone, BsChatLeftText } from "react-icons/bs";
 import { TfiEmail } from "react-icons/tfi";
+import CardList from "../component/card-list";
+import { getArticles } from "../utils/data";
+import { useEffect } from "react";
 
 function HomePage() {
+
+  const [articles, setArticles] = React.useState([]);
+  useEffect(() => {
+    async function fetchArticles() {
+      const content = await getArticles();
+      setArticles(content);
+    }
+    fetchArticles();
+  }, [])
+
   return (
     <>
       <div className="hero-image">
@@ -18,33 +32,7 @@ function HomePage() {
         <Row>
           <h1 className="content-header">Populer</h1>
           <hr></hr>
-          <Col>
-            <Card>
-              <img className="artikel-image" src={artikelImage} alt="Artikel Image" />
-              <div className="p-4 m-1">
-                <Card.Title>Lorem ipsum dolor sit amet</Card.Title>
-                <Card.Text>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam</Card.Text>
-              </div>
-            </Card>
-          </Col>
-          <Col>
-            <Card>
-              <img className="artikel-image" src={artikelImage} alt="Artikel Image" />
-              <div className="p-4 m-1">
-                <Card.Title>Lorem ipsum dolor sit amet</Card.Title>
-                <Card.Text>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam</Card.Text>
-              </div>
-            </Card>
-          </Col>
-          <Col>
-            <Card>
-              <img className="artikel-image" src={artikelImage} alt="Artikel Image" />
-              <div className="p-4 m-1">
-                <Card.Title>Lorem ipsum dolor sit amet</Card.Title>
-                <Card.Text>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam</Card.Text>
-              </div>
-            </Card>
-          </Col>
+          <CardList articles={articles}/>
         </Row>
 
         <Row>
