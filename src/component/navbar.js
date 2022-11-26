@@ -5,8 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 function NavBar() {
   return (
     <div>
-        {/* <Navbar className="navigation-container" expand="lg"> */}
-        <Navbar className="navigation-container">
+        <Navbar className="navigation-container" expand="sm">
         <Container className="navigation-text-container">
             <Navbar.Brand href="/" className="navigation-brand">
             <img
@@ -23,7 +22,7 @@ function NavBar() {
                 <Nav className="me-auto">
                     <Nav.Link href="/">Beranda</Nav.Link>
                     <Nav.Link href="/article">Artikel</Nav.Link>
-                    <Nav.Link href="/about_us">Tentang Kami</Nav.Link>
+                    <Nav.Link href="/about-us">Tentang Kami</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
         </Container>

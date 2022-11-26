@@ -1,119 +1,22 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 * {
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 #root {
   background-color: #f5f0d7;
 }
 
-/* Hero */
-.hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../assets/hero-image.PNG");
-  height: 300px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-.hero-text {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-}
+@import './component/footer.css';
+@import './component/navbar.css';
 
-.hero-text h1 {
-  font-weight: 600;
-}
-
-/* Artikel */
-.card {
-  border: none !important;
-}
-
-.card-title {
-  font-weight: 600 !important;
-  text-align: center;
-}
-
-.card-text {
-  text-align: center;
-  color: #7d7d7d;
-}
-
-.content-header {
-  font-weight: 600;
-  text-align: center;
-  padding: 30px 0 10px 0;
-}
-
-hr {
-  border-top: 15px solid black;
-}
-
-.artikel-image {
-  width: 100%;
-}
-
-.artikel-item {
-  background-color: aqua;
-}
-
-/* Layanan Pengaduan */
-.content-wrapper {
-  justify-content: center !important;
-}
-
-.content-pengaduan {
-  background-color: #ffffff;
-  width: 60% !important;
-  text-align: center;
-  box-shadow: 10px 10px 20px 10px rgba(0, 0, 0.2, 0.2);
-}
-
-.title-contact {
-  text-align: start;
-}
-
-.contact-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 5px;
-}
-
-.contact-wrapper {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  border: 2px solid #7d7d7d;
-  border-radius: 10px;
-  padding: 10px 5px 10px 0px;
-}
-
-.contact-wrapper p {
-  word-wrap: break-word;
-  margin-bottom: 0;
-}
-
-.contact-wrapper h4 {
-  margin-bottom: 5px;
-}
-
-.contact-content {
-  width: 50%;
-}
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-
-@import "./component/footer.css";
-@import "./component/navbar.css";
+@import './component/homepage.css';
 
 * {
   margin: 0 auto;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
