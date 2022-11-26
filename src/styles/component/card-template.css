@@ -12,6 +12,7 @@
 .article-header {
   display: flex;
   align-items: center;
+  justify-content: center;
   height: 65px;
 }
 
@@ -46,4 +47,9 @@ a[href]:hover {
 .card:hover {
   color: black;
   box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.4);
+}
+
+.article-content-container {
+  display: flex;
+  justify-content: space-between;
 }

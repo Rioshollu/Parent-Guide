@@ -1,9 +1,19 @@
-import React from "react";
-import { Container, Row, Col, Card } from "react-bootstrap";
+import React, { useEffect } from "react";
+import { Container, Row } from "react-bootstrap";
 import SearchBar from "../component/search-bar";
-import artikelImage from "../assets/artikel-image.png";
+import CardList from "../component/card-list";
+import { getAllArticles } from "../utils/data";
+
 
 function ArtikelPage() {
+  const [allArticles, setAllArticles] = React.useState([]);
+  useEffect(() => {
+    async function fetchArticles() {
+      const allContent = await getAllArticles();
+      setAllArticles(allContent);
+    }
+    fetchArticles();
+  }, [])
   return (
     <>
       <Container>
@@ -11,62 +21,7 @@ function ArtikelPage() {
         <Row className="p-3">
           <h1 className="content-header">Artikel</h1>
           <hr></hr>
-          <Col>
-            <Card>
-              <img className="artikel-image" src={artikelImage} alt="Artikel Image" />
-              <div className="p-2 m-1">
-                <Card.Title>Lorem ipsum dolor sit amet</Card.Title>
-                <Card.Text>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur</Card.Text>
-              </div>
-            </Card>
-          </Col>
-          <Col>
-            <Card>
-              <img className="artikel-image" src={artikelImage} alt="Artikel Image" />
-              <div className="p-2 m-1">
-                <Card.Title>Lorem ipsum dolor sit amet</Card.Title>
-                <Card.Text>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur</Card.Text>
-              </div>
-            </Card>
-          </Col>
-          <Col>
-            <Card>
-              <img className="artikel-image" src={artikelImage} alt="Artikel Image" />
-              <div className="p-2 m-1">
-                <Card.Title>Lorem ipsum dolor sit amet</Card.Title>
-                <Card.Text>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur</Card.Text>
-              </div>
-            </Card>
-          </Col>
-        </Row>
-        <Row className="p-3">
-          <Col>
-            <Card>
-              <img className="artikel-image" src={artikelImage} alt="Artikel Image" />
-              <div className="p-2 m-1">
-                <Card.Title>Lorem ipsum dolor sit amet</Card.Title>
-                <Card.Text>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur</Card.Text>
-              </div>
-            </Card>
-          </Col>
-          <Col>
-            <Card>
-              <img className="artikel-image" src={artikelImage} alt="Artikel Image" />
-              <div className="p-2 m-1">
-                <Card.Title>Lorem ipsum dolor sit amet</Card.Title>
-                <Card.Text>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur</Card.Text>
-              </div>
-            </Card>
-          </Col>
-          <Col>
-            <Card>
-              <img className="artikel-image" src={artikelImage} alt="Artikel Image" />
-              <div className="p-2 m-1">
-                <Card.Title>Lorem ipsum dolor sit amet</Card.Title>
-                <Card.Text>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur</Card.Text>
-              </div>
-            </Card>
-          </Col>
+          <CardList articles={allArticles}/>
         </Row>
       </Container>
     </>

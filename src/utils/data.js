@@ -24,8 +24,17 @@ async function getRecommendationArticles() {
     return responseJson;
 }
 
+async function getArticle(id) {
+    const response = await fetch(`${BASE_URL}/article/id`);
+    const responseJson = await response.json();
+
+    // console.log(responseJson);
+    return responseJson;
+}
+
 export {
     getAllArticles,
     getPopularArticles,
     getRecommendationArticles,
+    getArticle
 }

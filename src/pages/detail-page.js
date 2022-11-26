@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Card } from "react-bootstrap";
-import artikelImage from "../assets/artikel-image.png";
+// import artikelImage from '../../public/placeholder.png';
+
 
 function DetailPage() {
   return (
@@ -9,7 +10,7 @@ function DetailPage() {
         <section>
           <h6 className="text-danger text-center p-2">Categori</h6>
           <h1 className="detail-title text-center pb-5 fw-bold">Judul Artikel</h1>
-          <img className="detail-img rounded mx-auto d-block img-fluid" src={artikelImage} alt="Judul Artikel" />
+          <img className="detail-img rounded mx-auto d-block img-fluid"  alt="Judul Artikel" />
         </section>
         <section>
           <div className="detail-overview pt-4">
