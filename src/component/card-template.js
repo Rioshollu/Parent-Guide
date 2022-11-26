@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Col, Card, Button } from 'react-bootstrap';
+import { Col, Card } from 'react-bootstrap';
 
 function CardTemplate({ article }) {
   return (
@@ -18,9 +18,6 @@ function CardTemplate({ article }) {
               <Card.Subtitle className="article-date mb-2 text-muted">
                 {article.article_release_date}
               </Card.Subtitle>
-              <div className="article-button">
-                <Button variant="primary">Read</Button>
-              </div>
             </Card.Body>
           </Card>
         </Link>
