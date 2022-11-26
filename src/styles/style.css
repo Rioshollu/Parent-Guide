@@ -5,6 +5,8 @@
 @import './component/card-template.css';
 
 @import './pages/homepage.css';
+@import "./components/detail.css";
+
 
 * {
   box-sizing: border-box;
