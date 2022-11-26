@@ -9,6 +9,10 @@
   background-color: #f5f0d7;
 }
 
+/* 
+  Home Page
+*/
+
 @import './component/footer.css';
 @import './component/navbar.css';
 @import "./components/content.css";
@@ -25,4 +29,130 @@
 
 #root {
   background-color: #f5f0d7;
+}
+
+/* 
+  End Home Page
+*/
+
+/* 
+  About Page
+*/
+.about-header {
+  align-items: center;
+  background-color: white;
+}
+
+.about-title {
+  text-align: center;
+}
+
+.about-title h1 {
+  font-size: 60px;
+  font-weight: 600;
+  letter-spacing: 10px;
+}
+
+.about-tagline div {
+  padding: 50px;
+}
+
+.about-banner {
+  align-items: center;
+  text-align: center;
+}
+
+.about-banner .col {
+  padding: 0;
+}
+
+.about-banner img {
+  width: 100%;
+}
+
+.about-banner h1 {
+  font-size: 50px;
+  letter-spacing: 10px;
+}
+
+.about-vm {
+  background-color: white;
+  padding: 5%;
+}
+
+.about-vm .col {
+  box-shadow: -3px 9px 181px -60px rgba(140, 140, 140, 0.72);
+  -webkit-box-shadow: -3px 9px 181px -60px rgba(140, 140, 140, 0.72);
+  -moz-box-shadow: -3px 9px 181px -60px rgba(140, 140, 140, 0.72);
+}
+
+.about-vm div {
+  margin: 30px;
+  background-color: #f1f1f1;
+}
+
+.about-vm h3 {
+  font-weight: 600;
+  letter-spacing: 10px;
+  margin-bottom: 35px;
+}
+
+.about-vm p {
+  color: #7d7d7d;
+}
+
+.support-wrapper {
+  padding: 7%;
+}
+
+.about-support {
+  align-items: center;
+  box-shadow: -3px 9px 181px -60px rgba(140, 140, 140, 0.72);
+  -webkit-box-shadow: -3px 9px 181px -60px rgba(140, 140, 140, 0.72);
+  -moz-box-shadow: -3px 9px 181px -60px rgba(140, 140, 140, 0.72);
+}
+
+.about-support h2 {
+  margin-bottom: 35px;
+}
+
+.about-support img {
+  width: 100%;
+}
+
+.creator-title-wrapper {
+  background-color: white;
+}
+
+.creator-title-wrapper h1 {
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 8px;
+}
+
+.about-creator {
+  background-color: white;
+}
+
+.creator-image img {
+  width: 320px;
+}
+
+.creator-desc {
+  padding: 10%;
+  box-shadow: 1px 18px 134px -50px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 18px 134px -50px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 18px 134px -50px rgba(0, 0, 0, 0.75);
+}
+
+.creator-desc h3 {
+  letter-spacing: 5px;
+}
+
+.creator-desc h5 {
+  letter-spacing: 4px;
+}
+
+.creator-desc p {
+  color: gray;
 }
