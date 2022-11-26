@@ -1,3 +1,11 @@
+.me-auto {
+    margin-left: auto !important;
+}
+
+.navbar-collapse {
+    flex-grow: 0 !important;
+}
+
 .navigation-container {
     background-color: #AA8B56;
 }

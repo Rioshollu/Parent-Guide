@@ -1,6 +1,6 @@
 /* Hero */
 .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/public/placeholder.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../../assets/hero-image.PNG");
     height: 300px;
     background-position: center;
     background-repeat: no-repeat;
@@ -27,7 +27,7 @@
   }
   
   .card-title {
-    font-weight: 600 !important;
+    font-weight: bold !important;
     text-align: center;
   }
   

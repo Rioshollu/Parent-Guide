@@ -1,10 +1,26 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
-import { Container, Row, Col, Card } from "react-bootstrap";
-import artikelImage from "../assets/artikel-image.png";
+import React from "react";
+import { Container, Row} from "react-bootstrap";
 import { BsTelephone, BsChatLeftText } from "react-icons/bs";
 import { TfiEmail } from "react-icons/tfi";
+import CardList from "../component/card-list";
+import { getPopularArticles, getRecommendationArticles } from "../utils/data";
+import { useEffect } from "react";
 
 function HomePage() {
+  const [popularArticles, setPopularArticles] = React.useState([]);
+  const [recommendationArticles, setRecommendationArticles] = React.useState([]);
+  useEffect(() => {
+    async function fetchArticles() {
+      const popularContent = await getPopularArticles();
+      setPopularArticles(popularContent);
+
+      const recommendationContent = await getRecommendationArticles();
+      setRecommendationArticles(recommendationContent);
+    }
+    fetchArticles();
+  }, [])
+
   return (
     <>
       <div className="hero-image">
@@ -18,66 +34,15 @@ function HomePage() {
         <Row>
           <h1 className="content-header">Populer</h1>
           <hr></hr>
-          <Col>
-            <Card>
-              <img className="artikel-image" src={artikelImage} alt="Artikel Image" />
-              <div className="p-4 m-1">
-                <Card.Title>Lorem ipsum dolor sit amet</Card.Title>
-                <Card.Text>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam</Card.Text>
-              </div>
-            </Card>
-          </Col>
-          <Col>
-            <Card>
-              <img className="artikel-image" src={artikelImage} alt="Artikel Image" />
-              <div className="p-4 m-1">
-                <Card.Title>Lorem ipsum dolor sit amet</Card.Title>
-                <Card.Text>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam</Card.Text>
-              </div>
-            </Card>
-          </Col>
-          <Col>
-            <Card>
-              <img className="artikel-image" src={artikelImage} alt="Artikel Image" />
-              <div className="p-4 m-1">
-                <Card.Title>Lorem ipsum dolor sit amet</Card.Title>
-                <Card.Text>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam</Card.Text>
-              </div>
-            </Card>
-          </Col>
+          <CardList articles={popularArticles}/>
         </Row>
 
         <Row>
           <h1 className="content-header">Rekomendasi</h1>
           <hr></hr>
-          <Col>
-            <Card>
-              <img className="artikel-image" src={artikelImage} alt="Artikel Image" />
-              <div className="p-4 m-1">
-                <Card.Title>Lorem ipsum dolor sit amet</Card.Title>
-                <Card.Text>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam</Card.Text>
-              </div>
-            </Card>
-          </Col>
-          <Col>
-            <Card>
-              <img className="artikel-image" src={artikelImage} alt="Artikel Image" />
-              <div className="p-4 m-1">
-                <Card.Title>Lorem ipsum dolor sit amet</Card.Title>
-                <Card.Text>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam</Card.Text>
-              </div>
-            </Card>
-          </Col>
-          <Col>
-            <Card>
-              <img className="artikel-image" src={artikelImage} alt="Artikel Image" />
-              <div className="p-4 m-1">
-                <Card.Title>Lorem ipsum dolor sit amet</Card.Title>
-                <Card.Text>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam</Card.Text>
-              </div>
-            </Card>
-          </Col>
+          <CardList articles={recommendationArticles}/>
         </Row>
+        
         <Row className="mt-5 pb-5 content-wrapper">
           <h1 className="content-header">Layanan Pengaduan</h1>
           <div className="p-5 mt-3 content-pengaduan">

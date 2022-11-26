@@ -1,0 +1,49 @@
+.card {
+  margin: 0 auto;
+  border: none !important;
+}
+
+.card-container {
+  display: block;
+  height: 100%;
+  margin: 20px auto;
+}
+
+.article-header {
+  display: flex;
+  align-items: center;
+  height: 65px;
+}
+
+.article-image {
+  width: 100%;
+  height: 180px;
+}
+
+.article-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  font-weight: 600;
+}
+
+.article-date {
+  text-align: right;
+}
+
+.article-button {
+  display: flex;
+}
+
+a[href],
+a[href]:visited,
+a[href]:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.card:hover {
+  color: black;
+  box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.4);
+}

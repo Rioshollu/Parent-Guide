@@ -8,15 +8,16 @@ import DetailPage from "./pages/detail-page";
 function App() {
   return (
     <>
-    <main>
-      <NavBar />
+      <main>
+        <NavBar />
         <Routes>
-          <Route path='/' element={<HomePage />} />
-          <Route path='/article' />
-          <Route path='/about-us' />
+          <Route path="/" element={<HomePage />} />
+          <Route path="/article" />
+          <Route path="/about-us" />
+          <Route path="/article/:id" />
         </Routes>
-      <Footer />
-    </main>
+        <Footer />
+      </main>
     </>
   );
 }
