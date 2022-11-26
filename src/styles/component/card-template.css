@@ -1,5 +1,6 @@
 .card {
   margin: 0 auto;
+  border: none !important;
 }
 
 .card-container {
@@ -16,7 +17,7 @@
 
 .article-image {
   width: 100%;
-  height: 160px;
+  height: 180px;
 }
 
 .article-title {
@@ -24,6 +25,7 @@
   align-items: center;
   justify-content: center;
   height: 80px;
+  font-weight: 600;
 }
 
 .article-date {
