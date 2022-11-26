@@ -9,14 +9,19 @@
   background-color: #f5f0d7;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
 @import './component/footer.css';
 @import './component/navbar.css';
+@import "./components/content.css";
+@import "./components/search-bar.css";
 
 @import './component/homepage.css';
+
 
 * {
   margin: 0 auto;
   font-family: 'Poppins', sans-serif;
+}
+
+#root {
+  background-color: #f5f0d7;
 }
