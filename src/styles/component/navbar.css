@@ -1,0 +1,8 @@
+.navigation-container {
+    background-color: #AA8B56;
+}
+
+.navigation-brand {
+    display: flex;
+    align-items: center; 
+}

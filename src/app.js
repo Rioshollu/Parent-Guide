@@ -1,9 +1,11 @@
-import HomePage from "./pages/home-page";
+import NavBar from './component/navbar';
+import Footer from './component/footer';
 
 function App() {
   return (
     <>
-      <HomePage />
+      <NavBar />
+      <Footer />
     </>
   );
 }
