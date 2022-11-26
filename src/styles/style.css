@@ -3,9 +3,8 @@
 @import './component/footer.css';
 @import './component/navbar.css';
 @import './component/card-template.css';
-
+@import './component/detail.css';
 @import './pages/homepage.css';
-@import "./components/detail.css";
 
 
 * {
@@ -243,5 +242,5 @@ hr {
 }
 
 .creator-desc p {
-  color: gray;
+  color: gray;
 }
