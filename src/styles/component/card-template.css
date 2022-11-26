@@ -1,4 +1,36 @@
+.card {
+    margin: 0 auto;
+}
+
+.card-container {
+    display: block;
+    height: 100%;
+    margin: 20px auto;
+}
+
+.article-header{
+    display: flex;
+    align-items: center;
+    height: 65px;
+}
+
 .article-image {
     width: 100%;
-    height: 150px;
+    height: 160px;
+}
+
+.article-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 75px;
+}
+
+.article-date {
+    text-align: right;
+}
+
+.article-button {
+    display: flex;
 }

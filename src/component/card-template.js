@@ -6,15 +6,21 @@ import { Col, Card, Button } from 'react-bootstrap';
 function CardTemplate({ article }) {
   return (
     <>
-      <Col>
+      <Col className="card-container">
         <Link to={`/article/test/detail/${article.article_id}`}>
           <Card style={{ width: '18rem' }}>
-            <Card.Img variant="top" src={article.article_image_url} className="article-image"/>
+            <Card.Header className="article-header">
+              Kategori: {article.article_category}
+            </Card.Header>
+            <Card.Img variant="top" src={article.article_image_url} className="article-image" />
             <Card.Body>
-              <Card.Title>{article.article_title}</Card.Title>
-              <Card.Text className='article-category'>{article.article_category}</Card.Text>
-              <Card.Text className='article-date'>{article.article_release_date}</Card.Text>
-              <Button variant="primary">Go somewhere</Button>
+              <Card.Title className="article-title">{article.article_title}</Card.Title>
+              <Card.Subtitle className="article-date mb-2 text-muted">
+                {article.article_release_date}
+              </Card.Subtitle>
+              <div className="article-button">
+                <Button variant="primary">Read</Button>
+              </div>
             </Card.Body>
           </Card>
         </Link>

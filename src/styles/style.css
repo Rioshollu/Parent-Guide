@@ -2,8 +2,9 @@
 
 @import './component/footer.css';
 @import './component/navbar.css';
+@import './component/card-template.css';
 
-@import './component/homepage.css';
+@import './pages/homepage.css';
 
 * {
   box-sizing: border-box;
