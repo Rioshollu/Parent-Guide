@@ -7,7 +7,7 @@ function CardTemplate({ article }) {
     <>
       <Col className="card-container">
         <Link to={`/article/detail/${article.article_id}`}>
-          <Card style={{ width: '18rem' }}>
+          <Card style={{ width: '18rem' }} className='article-container'>
             <Card.Img variant="top" src={article.article_image_url} className="article-image" />
             <Card.Header className="article-header">{article.article_category}</Card.Header>
             <Card.Body>

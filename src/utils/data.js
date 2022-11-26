@@ -25,7 +25,7 @@ async function getRecommendationArticles() {
 }
 
 async function getArticle(id) {
-    const response = await fetch(`${BASE_URL}/article/id`);
+    const response = await fetch(`${BASE_URL}/article/detail/${id}`);
     const responseJson = await response.json();
 
     // console.log(responseJson);

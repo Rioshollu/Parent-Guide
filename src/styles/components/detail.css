@@ -1,22 +1,25 @@
 .detail-img {
-  width: 80%;
-  max-height: 500px;
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  margin: 0 auto;
 }
 
 .detail-title {
   letter-spacing: 3px;
+  font-size: 1.5em;
 }
 
 .detail-overview {
-  padding: 10px 10%;
-}
-
-.detail-credit {
-  width: 50%;
+  margin: 0 auto;
+  padding-top: 10px;
+  width: 90%;
+  text-align: justify;
 }
 
 .detail-credit {
   box-shadow: 6px 11px 5px 0px rgba(0, 0, 0, 0.12);
   -webkit-box-shadow: 6px 11px 5px 0px rgba(0, 0, 0, 0.12);
   -moz-box-shadow: 6px 11px 5px 0px rgba(0, 0, 0, 0.12);
-}
+  width: 80%;
+  margin: 0 0 20px auto;}
