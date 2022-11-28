@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Card } from 'react-bootstrap';
+import parser from 'html-react-parser';
 
 function CardDetailTemplate({ article }) {
 //   console.log(article);
@@ -14,7 +15,7 @@ function CardDetailTemplate({ article }) {
 
         <section>
           <div className="detail-overview">
-            <p className='detail-content'> {article[0].article_content}</p>
+            <div className='detail-content'> {parser(article[0].article_content)}</div>
           </div>
           <Card className="detail-credit">
             <Card.Body>
