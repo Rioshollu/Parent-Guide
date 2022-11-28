@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
-import SearchBar from "../component/search-bar";
-import CardList from "../component/card-list";
+import SearchBar from "../components/search-bar";
+import CardList from "../components/card-list";
 import { getAllArticles } from "../utils/data";
 
 

@@ -14,13 +14,11 @@ function CardDetailTemplate({ article }) {
 
         <section>
           <div className="detail-overview">
-            <p>
-            {article[0].article_content}
-            </p>
+            <p className='detail-content'> {article[0].article_content}</p>
           </div>
           <Card className="detail-credit">
             <Card.Body>
-              <Card.Title className="text-end">Sumber Artikel</Card.Title>
+              <Card.Title className="text-start">Sumber Artikel</Card.Title>
               <Card.Text className='text-left'>
                 {article[0].article_source}
               </Card.Text>

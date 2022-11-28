@@ -12,8 +12,6 @@
 
 .detail-overview {
   margin: 0 auto;
-  padding-top: 10px;
-  width: 90%;
   text-align: justify;
 }
 
@@ -22,4 +20,10 @@
   -webkit-box-shadow: 6px 11px 5px 0px rgba(0, 0, 0, 0.12);
   -moz-box-shadow: 6px 11px 5px 0px rgba(0, 0, 0, 0.12);
   width: 80%;
-  margin: 0 0 20px auto;}
+  margin: 0 auto 20px auto;
+}
+
+.detail-content {
+  margin: 20px 0;
+  text-indent: 50px;
+}
