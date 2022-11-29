@@ -37,7 +37,6 @@ function ArtikelPage() {
   }
 
   const filteredArticle = allArticles.filter((articel) => {
-<<<<<<< HEAD
     if (category === 'Semua') {
       return articel.article_title.toLowerCase().includes(keyword.toLowerCase())
     }
@@ -46,10 +45,6 @@ function ArtikelPage() {
     } 
     return articel.article_title.toLowerCase().includes(keyword.toLowerCase())
   }); 
-=======
-    return articel.article_title.toLowerCase().includes(keyword.toLowerCase());
-  });
->>>>>>> main
 
   return (
     <>
