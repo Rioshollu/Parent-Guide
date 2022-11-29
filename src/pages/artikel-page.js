@@ -4,7 +4,7 @@ import { useSearchParams } from "react-router-dom";
 import SearchBar from "../components/search-bar";
 import CardList from "../components/card-list";
 import { getAllArticles } from "../utils/data";
-import CategoryButton from "../component/category-button";
+import CategoryButton from "../components/category-button";
 
 function ArtikelPage() {
   const [searchParams, setSearchParams] = useSearchParams();
