@@ -36,14 +36,14 @@ function ArtikelPage() {
     setFilterParams({ category });
   }
 
-  const filteredArticle = allArticles.filter((articel) => {
+  const filteredArticle = allArticles.filter((article) => {
     if (category === 'Semua') {
-      return articel.article_title.toLowerCase().includes(keyword.toLowerCase())
+      return article.article_title.toLowerCase().includes(keyword.toLowerCase())
     }
     if (category !== '') {
-      return articel.article_category.includes(category);
+      return article.article_category.includes(category);
     } 
-    return articel.article_title.toLowerCase().includes(keyword.toLowerCase())
+    return article.article_title.toLowerCase().includes(keyword.toLowerCase())
   }); 
 
   return (

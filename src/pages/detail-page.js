@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import CardDetailTemplate from '../components/card-detail-template';
-import { Container } from 'react-bootstrap';
+import { Container, Spinner } from 'react-bootstrap';
 import { getArticle } from '../utils/data';
 
 function DetailPage() {
@@ -19,11 +19,11 @@ function DetailPage() {
   }, [id]);
   
   if (initializing === true) {
-    return <div id="indicator">Loading</div>;
+    return <Spinner animation="border" role="status"></Spinner>;
   }
 
   if(article.length === 0) {
-    return <p>Ada kesalahan...</p>
+    return <Spinner animation="border" role="status"></Spinner>
   }
 
   return (

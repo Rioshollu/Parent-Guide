@@ -10,6 +10,7 @@ import { IoLocationSharp } from 'react-icons/io5';
 function HomePage() {
   const [popularArticles, setPopularArticles] = React.useState([]);
   const [recommendationArticles, setRecommendationArticles] = React.useState([]);
+  
   useEffect(() => {
     async function fetchArticles() {
       const popularContent = await getPopularArticles();
@@ -41,9 +42,6 @@ function HomePage() {
           <h1 className="content-header">Rekomendasi</h1>
           <hr></hr>
           <CardList articles={recommendationArticles} />
-          {/* <div className='home-content'>
-            <CardList articles={recommendationArticles} />
-          </div> */}
         </Row>
 
         <Row className="mb-3 content-wrapper">
