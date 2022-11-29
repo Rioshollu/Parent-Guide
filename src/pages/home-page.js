@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row } from 'react-bootstrap';
+import { Container, Row, Spinner } from 'react-bootstrap';
 import { BsTelephone, BsChatLeftText } from 'react-icons/bs';
 import { TfiEmail } from 'react-icons/tfi';
 import CardList from '../components/card-list';
@@ -11,6 +11,8 @@ function HomePage() {
   const [popularArticles, setPopularArticles] = React.useState([]);
   const [recommendationArticles, setRecommendationArticles] = React.useState([]);
   
+  const [initializing, setInitializing] = React.useState(true);
+  
   useEffect(() => {
     async function fetchArticles() {
       const popularContent = await getPopularArticles();
@@ -20,7 +22,18 @@ function HomePage() {
       setRecommendationArticles(recommendationContent);
     }
     fetchArticles();
+    setInitializing(false);
   }, []);
+
+  if (initializing === true) {
+    return (
+      <div className="indicator">
+        <Spinner animation="grow" />
+        <Spinner animation="grow" />
+        <Spinner animation="grow" />
+      </div>
+    );
+  }
 
   return (
     <>

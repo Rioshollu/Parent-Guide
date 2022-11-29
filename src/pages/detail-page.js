@@ -18,12 +18,14 @@ function DetailPage() {
     setInitializing(false);
   }, [id]);
   
-  if (initializing === true) {
-    return <Spinner animation="border" role="status"></Spinner>;
-  }
-
-  if(article.length === 0) {
-    return <Spinner animation="border" role="status"></Spinner>
+  if (initializing === true || article.length === 0) {
+    return (
+      <div className='indicator'>
+        <Spinner animation="grow" />
+        <Spinner animation="grow" />
+        <Spinner animation="grow" />
+      </div>
+    )
   }
 
   return (
