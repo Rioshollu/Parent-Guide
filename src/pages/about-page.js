@@ -15,8 +15,7 @@ function AboutPage() {
           <Col className="about-tagline">
             <div>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga
-                praesentium optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis obcaecati tenetur iure eius earum ut molestias
+              <strong>Parent Guide</strong> adalah platform digital untuk orang tua di Indonesia yang berisikan informasi, tips, dan trik dalam mengasuh anak. <br />Visi dari Parent Guide adalah menjadi portal berita parenting yang paling mengerti kebutuhan orang tua dalam menjalani kehidupannya sebagai aspek yang berperan penting dalam pertumbuhan anak.
               </p>
             </div>
           </Col>
@@ -36,7 +35,7 @@ function AboutPage() {
         <Row className="about-vm">
           <Col>
             <div>
-              <h3>Lorem</h3>
+              <h3>Mudah Digunakan</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga
                 praesentium optio, eaque rerum! Provident similique accusantium nemo autem.
@@ -45,7 +44,7 @@ function AboutPage() {
           </Col>
           <Col>
             <div>
-              <h3>Lorem</h3>
+              <h3>Terpercaya</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga
                 praesentium optio, eaque rerum! Provident similique accusantium nemo autem.
@@ -54,7 +53,7 @@ function AboutPage() {
           </Col>
           <Col>
             <div>
-              <h3>Lorem</h3>
+              <h3>Bebas Akses Kapan Saja</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga
                 praesentium optio, eaque rerum! Provident similique accusantium nemo autem.
@@ -70,8 +69,8 @@ function AboutPage() {
               <div className="p-5">
                 <h2>Lorem ipsum dolor sit amet</h2>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga
-                  praesentium optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis obcaecati tenetur iure eius earum ut molestias
+                Semua orang tua tentunya berharap bahwa anak-anak mereka akan tumbuh menjadi manusia yang penuh perhatian dan menyenangkan yang membuat pilihan-pilihan hebat. Tentunya untuk meraih hal seperti itu diperlukan pola asuh yang sesuai.
+                <br />Kami tahu bahwa mengasuh anak adalah pekerjaan tersulit yang pernah dilakukan, dan kami hadir di sini untuk memastikan bahwa orang tua di Indonesia memiliki pengetahuan yang lebih mengenai pola asuh pada anak. 
                 </p>
               </div>
             </Col>

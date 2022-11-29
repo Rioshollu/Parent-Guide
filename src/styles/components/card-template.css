@@ -38,16 +38,20 @@
   display: flex;
 }
 
-a[href],
+a[href] {
+  color: black;
+  text-decoration: none;
+}
+
 a[href]:visited,
 a[href]:hover {
   text-decoration: none;
-  color: black;
+  color: #ffffff;
 }
 
-.article-container:hover {
-  color: black;
+.article-container:hover{
   box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.4);
+  background-color: #395144;
 }
 
 .article-content-container {

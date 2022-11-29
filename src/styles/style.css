@@ -5,6 +5,7 @@
 @import "./components/card-template.css";
 @import "./components/detail.css";
 @import "./components/search-bar";
+@import "./components/category-button.css";
 
 @import "./pages/homepage.css";
 @import "./pages/about-us.css";

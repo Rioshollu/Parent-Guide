@@ -51,7 +51,7 @@ function ArtikelPage() {
       <Container>
         <SearchBar keyword={keyword} keywordChange={onKeywordChangeHandler} />
         <CategoryButton clicked={onButtonClickedHandler} />
-        <Row className="p-3">
+        <Row>
           <h1 className="content-header">Artikel</h1>
           <hr></hr>
           <CardList articles={filteredArticle} />

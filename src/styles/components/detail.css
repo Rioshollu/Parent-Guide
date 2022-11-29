@@ -7,12 +7,11 @@
 
 .detail-title {
   letter-spacing: 3px;
-  font-size: 1.5em;
+  font-size: xx-large;
 }
 
 .detail-overview {
   margin: 0 auto;
-  text-align: justify;
 }
 
 .detail-credit {
@@ -24,6 +23,7 @@
 }
 
 .detail-content {
-  margin: 20px 0;
+  width: 90%;
+  margin: 20px auto;
   text-indent: 50px;
 }

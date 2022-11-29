@@ -12,6 +12,7 @@ function App() {
       <main>
         <NavBar />
         <Routes>
+          <Route path="/*" element={<p>Halaman Tidak Ditemukan..</p>} />
           <Route path="/" element={<HomePage />} />
           <Route path="/article" element={<ArtikelPage />} />
           <Route path="/about-us" element={<AboutPage />} />
