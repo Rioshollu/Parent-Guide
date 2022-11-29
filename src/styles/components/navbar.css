@@ -1,0 +1,21 @@
+.navigation-container {
+    background-color: #F4F4F2;
+}
+
+.navigation-brand {
+    display: flex;
+    align-items: center; 
+    color: #28362F !important;
+}
+
+.nav-link {
+    color: #28362F !important;
+}
+
+.me-auto {
+    margin-left: auto !important;
+}
+
+.navbar-collapse {
+    flex-grow: 0 !important;
+}

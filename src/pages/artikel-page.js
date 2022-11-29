@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
 import { useSearchParams } from "react-router-dom";
-import SearchBar from "../component/search-bar";
-import CardList from "../component/card-list";
+import SearchBar from "../components/search-bar";
+import CardList from "../components/card-list";
 import { getAllArticles } from "../utils/data";
 import CategoryButton from "../component/category-button";
 
@@ -37,6 +37,7 @@ function ArtikelPage() {
   }
 
   const filteredArticle = allArticles.filter((articel) => {
+<<<<<<< HEAD
     if (category === 'Semua') {
       return articel.article_title.toLowerCase().includes(keyword.toLowerCase())
     }
@@ -45,6 +46,10 @@ function ArtikelPage() {
     } 
     return articel.article_title.toLowerCase().includes(keyword.toLowerCase())
   }); 
+=======
+    return articel.article_title.toLowerCase().includes(keyword.toLowerCase());
+  });
+>>>>>>> main
 
   return (
     <>

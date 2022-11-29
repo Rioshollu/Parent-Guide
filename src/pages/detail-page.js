@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import CardDetailTemplate from '../component/card-detail-template';
+import CardDetailTemplate from '../components/card-detail-template';
 import { Container } from 'react-bootstrap';
 import { getArticle } from '../utils/data';
 

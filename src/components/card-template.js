@@ -6,23 +6,19 @@ function CardTemplate({ article }) {
   return (
     <>
       <Col className="card-container">
-        <Link to={`/article/detail/${article.article_id}`}>
-          <Card style={{ width: '18rem' }} className='article-container'>
+        <Card className="article-container">
+          <Link to={`/article/detail/${article.article_id}`}>
             <Card.Img variant="top" src={article.article_image_url} className="article-image" />
             <Card.Header className="article-header">{article.article_category}</Card.Header>
             <Card.Body>
               <Card.Title className="article-title">{article.article_title}</Card.Title>
-              <div className='article-content-container'>
-                <span className="article-rating mb-2 text-muted">
-                  ⭐️{article.article_rating}
-                </span>
-                <span className="article-date mb-2 text-muted">
-                  {article.article_release_date}
-                </span>
+              <div className="article-content-container">
+                <span className="article-rating mb-2 text-muted">⭐️{article.article_rating}</span>
+                <span className="article-date mb-2 text-muted">{article.article_release_date}</span>
               </div>
             </Card.Body>
-          </Card>
-        </Link>
+          </Link>
+        </Card>
       </Col>
     </>
   );
