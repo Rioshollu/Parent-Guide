@@ -1,23 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-@import './components/footer.css';
-@import './components/navbar.css';
-@import './components/card-template.css';
-@import './components/detail.css';
-@import './components/search-bar';
+@import "./components/footer.css";
+@import "./components/navbar.css";
+@import "./components/card-template.css";
+@import "./components/detail.css";
+@import "./components/search-bar";
 
-@import './pages/homepage.css';
-@import './pages/about-us.css';
-
+@import "./pages/homepage.css";
+@import "./pages/about-us.css";
 
 * {
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 #root {
-  background-color: #F4F4F2;
-  color: #28362F;
+  background-color: #f4f4f2;
+  color: #28362f;
 
   /* dark mode */
   /* background-color: #28362F;
