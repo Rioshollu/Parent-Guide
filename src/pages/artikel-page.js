@@ -37,9 +37,12 @@ function ArtikelPage() {
   }
 
   const filteredArticle = allArticles.filter((articel) => {
+    if (category === 'Semua') {
+      return articel.article_title.toLowerCase().includes(keyword.toLowerCase())
+    }
     if (category !== '') {
       return articel.article_category.includes(category);
-    }
+    } 
     return articel.article_title.toLowerCase().includes(keyword.toLowerCase())
   }); 
 
@@ -47,7 +50,7 @@ function ArtikelPage() {
     <>
       <Container>
         <SearchBar keyword={keyword} keywordChange={onKeywordChangeHandler} />
-        <CategoryButton category={category} clicked={onButtonClickedHandler} />
+        <CategoryButton clicked={onButtonClickedHandler} />
         <Row className="p-3">
           <h1 className="content-header">Artikel</h1>
           <hr></hr>
