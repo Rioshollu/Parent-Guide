@@ -1,11 +1,11 @@
-/* eslint-disable jsx-a11y/img-redundant-alt */
-import React from "react";
-import { Container, Row} from "react-bootstrap";
-import { BsTelephone, BsChatLeftText } from "react-icons/bs";
-import { TfiEmail } from "react-icons/tfi";
-import CardList from "../component/card-list";
-import { getPopularArticles, getRecommendationArticles } from "../utils/data";
-import { useEffect } from "react";
+import React from 'react';
+import { Container, Row } from 'react-bootstrap';
+import { BsTelephone, BsChatLeftText } from 'react-icons/bs';
+import { TfiEmail } from 'react-icons/tfi';
+import CardList from '../components/card-list';
+import { getPopularArticles, getRecommendationArticles } from '../utils/data';
+import { useEffect } from 'react';
+import { IoLocationSharp } from 'react-icons/io5';
 
 function HomePage() {
   const [popularArticles, setPopularArticles] = React.useState([]);
@@ -19,7 +19,7 @@ function HomePage() {
       setRecommendationArticles(recommendationContent);
     }
     fetchArticles();
-  }, [])
+  }, []);
 
   return (
     <>
@@ -34,21 +34,24 @@ function HomePage() {
         <Row>
           <h1 className="content-header">Populer</h1>
           <hr></hr>
-          <CardList articles={popularArticles}/>
+          <CardList articles={popularArticles} />
         </Row>
 
         <Row>
           <h1 className="content-header">Rekomendasi</h1>
           <hr></hr>
-          <CardList articles={recommendationArticles}/>
+          <CardList articles={recommendationArticles} />
+          {/* <div className='home-content'>
+            <CardList articles={recommendationArticles} />
+          </div> */}
         </Row>
-        
-        <Row className="mt-5 pb-5 content-wrapper">
+
+        <Row className="mb-3 content-wrapper">
           <h1 className="content-header">Layanan Pengaduan</h1>
-          <div className="p-5 mt-3 content-pengaduan">
+          <div className="content-pengaduan">
             <div className="title-contact">
               <h4>Komnas Perlindungan Anak</h4>
-              <p>Jl. Teuku Umar No. 10 Gondangdia Menteng Jakarta Pusat DKI Jakarta, Indonesia</p>
+              <p><IoLocationSharp size={20}/>Jl. Teuku Umar No. 10 Gondangdia Menteng Jakarta Pusat DKI Jakarta, Indonesia </p>
             </div>
             <hr></hr>
             <div className="contact-list">

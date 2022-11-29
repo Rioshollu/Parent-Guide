@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
 import { useSearchParams } from "react-router-dom";
-import SearchBar from "../component/search-bar";
-import CardList from "../component/card-list";
+import SearchBar from "../components/search-bar";
+import CardList from "../components/card-list";
 import { getAllArticles } from "../utils/data";
 
 function ArtikelPage() {
@@ -26,7 +26,7 @@ function ArtikelPage() {
 
   const filteredArticle = allArticles.filter((articel) => {
     return articel.article_title.toLowerCase().includes(keyword.toLowerCase());
-  }); 
+  });
 
   return (
     <>

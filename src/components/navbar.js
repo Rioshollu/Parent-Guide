@@ -4,13 +4,13 @@ import Navbar from 'react-bootstrap/Navbar';
 
 function NavBar() {
   return (
-    <div>
+    <div className='navigation'>
         <Navbar className="navigation-container" expand="sm">
         <Container className="navigation-text-container">
             <Navbar.Brand href="/" className="navigation-brand">
             <img
                 alt="Brand Logo"
-                src="/logo.svg"
+                src="/logo-dark.svg"
                 width="50"
                 height="50"
                 className="d-inline-block align-top"
