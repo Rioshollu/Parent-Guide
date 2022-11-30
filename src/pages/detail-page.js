@@ -6,7 +6,7 @@ import { getArticle } from '../utils/data';
 
 function DetailPage() {
   const { id } = useParams();
-  const [article, setArticle] = React.useState([]);
+  const [article, setArticle] = React.useState();
   const [initializing, setInitializing] = React.useState(true);
 
   useEffect(() => {
@@ -18,7 +18,7 @@ function DetailPage() {
     setInitializing(false);
   }, [id]);
   
-  if (initializing === true || article.length === 0) {
+  if (initializing === true || article === undefined) {
     return (
       <div className='indicator'>
         <Spinner animation="grow" />
