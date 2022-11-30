@@ -24,6 +24,12 @@
   --hr: black;
   --button: #28362f ;
   --img-content: url("../../public/logo-dark.svg");
+  --card-bg: #ffffff;
+  --card-text-bg: #395144;
+  --card-hover-color: #395144;
+  --card-header-bg-color: #f7f7f7;
+  --card-header-text-color: #283632;
+  --cat-button-outline: #283632;
 }
 
 [data-theme="dark"] {
@@ -35,6 +41,12 @@
   --on-color: #ffffff;
   --color-about-vm: #ffffff;
   --img-content: url("../../public/logo.svg");
+  --card-bg: #28362f;
+  --card-text-bg: #f4f4f2;
+  --card-hover-color: #AA8B56;
+  --card-header-bg-color: #2d3f36;
+  --card-header-text-color: #f7f7f7;
+  --cat-button-outline: #AA8B56;
 }
 
 main {

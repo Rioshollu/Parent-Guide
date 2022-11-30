@@ -10,11 +10,13 @@
     background-color: var(--button);
     color: #FFFFFF;
     padding: 10px;
+    border: 1px solid var(--cat-button-outline);
 }
 
 .button-container>.btn:hover {
-    background-color: #28362f;
+    background-color: var(--cat-button-outline);
     color: #FFFFFF;
+    border: 1px solid #AA8B56;
 }
 
 @media screen and (min-width: 1100px) {

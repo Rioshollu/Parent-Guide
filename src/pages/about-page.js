@@ -60,7 +60,7 @@ function AboutPage() {
           </Col>
           <Col>
             <div>
-              <h3>Terpercaya</h3>
+              <h3>Informasi Terpercaya</h3>
               <p>
               Kekuatan Parent Guide yang menjadi sumber terpercaya informasi mengenai pola asuh pada anak yang bersumber dari jurnal - jurnal terpercaya.
               </p>
