@@ -3,7 +3,8 @@
 */
 .about-header {
     align-items: center;
-    background-color: white;
+    background-color: var(--on-background-color);
+    color: var(--on-color);
 }
 
 .about-title {

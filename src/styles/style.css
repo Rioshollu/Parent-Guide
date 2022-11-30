@@ -16,10 +16,15 @@
 }
 
 #root {
-  background-color: #f4f4f2;
-  color: #28362f;
+  --background-color: #f4f4f2;
+  --color: #28362f;
+}
 
-  /* dark mode */
-  /* background-color: #28362F;
-  color: #ffffff; */
+[data-theme="dark"] {
+  --on-background-color: #28362f;
+  --on-color: #ffffff;
+}
+
+main {
+  background-color: var(--on-background-color);
 }
