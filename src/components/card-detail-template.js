@@ -3,7 +3,6 @@ import { Container, Card } from 'react-bootstrap';
 import parser from 'html-react-parser';
 
 function CardDetailTemplate({ article }) {
-//   console.log(article);
   return (
     <>
       <Container>

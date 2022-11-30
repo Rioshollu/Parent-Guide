@@ -1,12 +1,29 @@
-import { Row, Col, Container } from "react-bootstrap";
+import React, { useEffect } from 'react';
+import { Row, Col, Container, Spinner } from "react-bootstrap";
 import bannerImage from "../assets/banner1.png";
 import supportImage from "../assets/support.jpg";
 import people from "../assets/people.png";
 
 function AboutPage() {
+  const [initializing, setInitializing] = React.useState(true);
+  
+  useEffect(() => {
+    setInitializing(false);
+  }, []);
+
+  if (initializing === true) {
+    return (
+      <div className="indicator">
+        <Spinner animation="grow" />
+        <Spinner animation="grow" />
+        <Spinner animation="grow" />
+      </div>
+    );
+  }
+
   return (
     <>
-      {/* Header */}
+        {/* Header */}
       <Container fluid>
         <Row className="about-header">
           <Col className="about-title">
