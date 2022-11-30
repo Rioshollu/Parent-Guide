@@ -8,6 +8,11 @@
     color: var(--on-color) !important;
 }
 
+.navbar-brand img {
+    background-color: var(--on-background-color);
+    content: var(--img-content);
+}
+
 .nav-link {
     color: var(--on-color) !important;
 }

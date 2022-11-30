@@ -13,7 +13,8 @@ function NavBar() {
       <Navbar className="navigation-container" expand="sm">
         <Container className="navigation-text-container">
           <Navbar.Brand href="/" className="navigation-brand">
-            <img alt="Brand Logo" src="/logo-dark.svg" width="50" height="50" className="d-inline-block align-top" /> Parent Guide
+            {/* <img alt="Brand Logo" src="/logo-dark.svg" width="50" height="50" className="d-inline-block align-top" /> Parent Guide */}
+            <img alt="Brand Logo" width="50" height="50" className="d-inline-block align-top" /> Parent Guide
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">

@@ -15,14 +15,26 @@
   font-family: "Poppins", sans-serif;
 }
 
-#root {
+:root {
   --background-color: #f4f4f2;
+  --background-about-header: #f4f4f2;
+  --background-about: #f1f1f1;
   --color: #28362f;
+  --color-about-vm: #7d7d7d;
+  --hr: black;
+  --button: #28362f ;
+  --img-content: url("../../public/logo-dark.svg");
 }
 
 [data-theme="dark"] {
   --on-background-color: #28362f;
+  --background-about-header: #283632;
+  --background-about: #283632;
+  --button: #AA8B56;
+  --hr: #ffffff;
   --on-color: #ffffff;
+  --color-about-vm: #ffffff;
+  --img-content: url("../../public/logo.svg");
 }
 
 main {
