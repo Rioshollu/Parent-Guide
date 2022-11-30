@@ -37,8 +37,7 @@ function AboutPage() {
             <div>
               <h3>Mudah Digunakan</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga
-                praesentium optio, eaque rerum! Provident similique accusantium nemo autem.
+                Parent Guide dirancang semaksimal mungkin agar dapat diakses oleh berbagai kalangan dan sangat mudah digunakan.
               </p>
             </div>
           </Col>
@@ -46,8 +45,7 @@ function AboutPage() {
             <div>
               <h3>Terpercaya</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga
-                praesentium optio, eaque rerum! Provident similique accusantium nemo autem.
+              Kekuatan Parent Guide yang menjadi sumber terpercaya informasi mengenai pola asuh pada anak yang bersumber dari jurnal - jurnal terpercaya.
               </p>
             </div>
           </Col>
@@ -55,8 +53,7 @@ function AboutPage() {
             <div>
               <h3>Bebas Akses Kapan Saja</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga
-                praesentium optio, eaque rerum! Provident similique accusantium nemo autem.
+              Parent Guide dapat diakses melalui berbagai device, sehingga sangat memudahkan orang tua untuk tetap mendapatkan informasi mengenai pola asuh dimanapun dan kapanpun.
               </p>
             </div>
           </Col>
@@ -67,7 +64,7 @@ function AboutPage() {
           <Row className="about-support">
             <Col>
               <div className="p-5">
-                <h2>Lorem ipsum dolor sit amet</h2>
+                <h2>Parent Guide</h2>
                 <p>
                 Semua orang tua tentunya berharap bahwa anak-anak mereka akan tumbuh menjadi manusia yang penuh perhatian dan menyenangkan yang membuat pilihan-pilihan hebat. Tentunya untuk meraih hal seperti itu diperlukan pola asuh yang sesuai.
                 <br />Kami tahu bahwa mengasuh anak adalah pekerjaan tersulit yang pernah dilakukan, dan kami hadir di sini untuk memastikan bahwa orang tua di Indonesia memiliki pengetahuan yang lebih mengenai pola asuh pada anak. 
@@ -92,8 +89,8 @@ function AboutPage() {
           </Col>
           <Col md={3}>
             <div className="creator-desc">
-              <h3>Lorem ipsum dolor</h3>
-              <h5>Lorem</h5>
+              <h3>Jesslyn Lim</h3>
+              <h5>The Developer</h5>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum</p>
             </div>
           </Col>
@@ -104,8 +101,8 @@ function AboutPage() {
           </Col>
           <Col md={3}>
             <div className="creator-desc">
-              <h3>Lorem ipsum dolor</h3>
-              <h5>Lorem</h5>
+              <h3>Nyayu Maharani</h3>
+              <h5>The Researcher</h5>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum</p>
             </div>
           </Col>
@@ -113,8 +110,8 @@ function AboutPage() {
         <Row className="about-creator pt-4">
           <Col md={3}>
             <div className="creator-desc">
-              <h3>Lorem ipsum dolor</h3>
-              <h5>Lorem</h5>
+              <h3>Ghalib Hani Pratama</h3>
+              <h5>The Developer</h5>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum</p>
             </div>
           </Col>
@@ -125,8 +122,8 @@ function AboutPage() {
           </Col>
           <Col md={3}>
             <div className="creator-desc">
-              <h3>Lorem ipsum dolor</h3>
-              <h5>Lorem</h5>
+              <h3>Rio Shollu Saputra</h3>
+              <h5>The Developer</h5>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum</p>
             </div>
           </Col>
