@@ -67,7 +67,6 @@ function ArtikelPage() {
         <CategoryButton clicked={onButtonClickedHandler} />
         <Row>
           <h1 className="content-header">Artikel</h1>
-          <hr></hr>
           <CardList articles={filteredArticle} />
         </Row>
       </Container>

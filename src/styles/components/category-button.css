@@ -7,7 +7,7 @@
 .button-container>.btn {
     margin: 0 5px;
     min-width: 150px;
-    background-color: #28362f;
+    background-color: var(--button);
     color: #FFFFFF;
     padding: 10px;
 }

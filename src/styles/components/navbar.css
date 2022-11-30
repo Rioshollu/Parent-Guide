@@ -1,15 +1,20 @@
 .navigation-container {
-    background-color: #F4F4F2;
+    background-color: var(--on-background-color);
 }
 
 .navigation-brand {
     display: flex;
     align-items: center; 
-    color: #28362F !important;
+    color: var(--on-color) !important;
+}
+
+.navbar-brand img {
+    background-color: var(--on-background-color);
+    content: var(--img-content);
 }
 
 .nav-link {
-    color: #28362F !important;
+    color: var(--on-color) !important;
 }
 
 .me-auto {
@@ -18,4 +23,12 @@
 
 .navbar-collapse {
     flex-grow: 0 !important;
+}
+
+.nav-button {
+    border: none;
+    background-color: transparent;
+    font-size: 35px;
+    margin-right: 10px;
+    color: var(--on-color);
 }

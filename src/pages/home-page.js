@@ -47,13 +47,11 @@ function HomePage() {
       <Container>
         <Row>
           <h1 className="content-header">Populer</h1>
-          <hr></hr>
           <CardList articles={popularArticles} />
         </Row>
 
         <Row>
           <h1 className="content-header">Rekomendasi</h1>
-          <hr></hr>
           <CardList articles={recommendationArticles} />
         </Row>
 
