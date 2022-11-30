@@ -64,6 +64,13 @@ a[href]:hover {
   padding: 0 !important;
 }
 
+.indicator {
+  text-align: center;
+}
+
+.indicator > .spinner-grow {
+  margin: 10px 5px;
+}
 
 @media screen and (min-width: 425px) {
   .article-container{

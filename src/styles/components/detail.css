@@ -27,3 +27,7 @@
   margin: 20px auto;
   text-indent: 50px;
 }
+
+li {
+  text-indent: 0px;
+}
