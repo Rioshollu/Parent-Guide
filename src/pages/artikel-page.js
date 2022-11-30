@@ -3,8 +3,8 @@ import { Container, Row, Spinner } from 'react-bootstrap';
 import { useSearchParams } from 'react-router-dom';
 import SearchBar from '../components/search-bar';
 import CardList from '../components/card-list';
-import { getAllArticles } from '../utils/data';
 import CategoryButton from '../components/category-button';
+import { getAllArticles } from '../utils/data';
 
 function ArtikelPage() {
   const [searchParams, setSearchParams] = useSearchParams();

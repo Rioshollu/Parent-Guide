@@ -52,3 +52,7 @@
 main {
   background-color: var(--on-background-color);
 }
+
+.indicator > p {
+  color: var(--hr);
+}

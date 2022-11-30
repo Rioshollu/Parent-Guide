@@ -1,10 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Container, Row, Spinner } from 'react-bootstrap';
 import { BsTelephone, BsChatLeftText } from 'react-icons/bs';
 import { TfiEmail } from 'react-icons/tfi';
 import CardList from '../components/card-list';
 import { getPopularArticles, getRecommendationArticles } from '../utils/data';
-import { useEffect } from 'react';
 import { IoLocationSharp } from 'react-icons/io5';
 
 function HomePage() {
