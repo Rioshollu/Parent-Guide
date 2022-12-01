@@ -19,9 +19,10 @@ function CardDetailTemplate({ article }) {
           <Card className="detail-credit">
             <Card.Body>
               <Card.Title className="text-start">Sumber Artikel</Card.Title>
-              <Card.Text className='text-left'>
-                {article.article_source}
-              </Card.Text>
+              <Card.Text className='text-left'>{article.article_source}</Card.Text>
+              <hr />
+              <Card.Title className="text-start">Sumber Gambar</Card.Title>
+              <Card.Text className='text-left'>{article.article_image_url}</Card.Text>
             </Card.Body>
           </Card>
         </section>

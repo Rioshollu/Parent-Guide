@@ -5,6 +5,7 @@
     align-items: center;
     background-color: var(--background-about-header);
     color: var(--on-color);
+    min-height: 50vh;
 }
 
 .about-title {
@@ -30,21 +31,15 @@
     padding: 0;
 }
 
-.about-banner h1 {
+.about-banner-text > h1 {
     color: var(--on-color);
-}
-
-.about-banner img {
-    width: 100%;
-}
-
-.about-banner h1 {
     font-size: 50px;
     letter-spacing: 10px;
+    text-align: center;
 }
 
 .about-vm {
-    background-color: var(--on-background-color);
+    background-color: var(--background-about-header);
     padding: 5%;
 }
 
@@ -70,28 +65,20 @@
     color: var(--color-about-vm);
 }
 
-.support-wrapper {
-    padding: 7%;
-}
-
-.about-support {
+/* .about-banner-text {
     align-items: center;
     box-shadow: -3px 9px 181px -60px rgba(140, 140, 140, 0.72);
     -webkit-box-shadow: -3px 9px 181px -60px rgba(140, 140, 140, 0.72);
     -moz-box-shadow: -3px 9px 181px -60px rgba(140, 140, 140, 0.72);
-}
+} */
 
-.about-support h2 {
+.about-banner-text h2 {
     margin-bottom: 35px;
     color: var(--on-color);
 }
 
-.about-support p {
+.about-banner-text p {
     color: var(--on-color);
-}
-
-.about-support img {
-    width: 100%;
 }
 
 .creator-title-wrapper {
@@ -112,12 +99,9 @@
     color: var(--on-color);
 }
 
-.creator-image img {
-    width: 320px;
-}
-
 .creator-desc {
-    padding: 10%;
+    padding: 40px;
+    margin-left: 20px;
     box-shadow: 1px 18px 134px -50px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 1px 18px 134px -50px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 1px 18px 134px -50px rgba(0, 0, 0, 0.75);
@@ -136,3 +120,50 @@
 .creator-desc p {
     color: var(--color-about-vm);
 }
+
+.creator-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px auto;
+}
+
+.about-banner-image {
+    width: 100%;
+    object-fit: cover;
+}
+
+.about-banner-container {
+    flex-direction: column !important;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.about-banner-text {
+    display: flex;
+    align-items: center;
+}
+
+.pg-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+.creator-image > img {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+}
+
+@media screen and (min-width: 700px) {
+    .about-banner-container {
+        flex-direction: row !important;
+    }
+    .creator-container {
+        flex-direction: row;
+    }
+  }
