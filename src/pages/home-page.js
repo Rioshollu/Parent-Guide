@@ -9,9 +9,9 @@ import { IoLocationSharp } from 'react-icons/io5';
 function HomePage() {
   const [popularArticles, setPopularArticles] = React.useState([]);
   const [recommendationArticles, setRecommendationArticles] = React.useState([]);
-  
+
   const [initializing, setInitializing] = React.useState(true);
-  
+
   useEffect(() => {
     async function fetchArticles() {
       const popularContent = await getPopularArticles();
@@ -59,7 +59,10 @@ function HomePage() {
           <div className="content-pengaduan">
             <div className="title-contact">
               <h4>Komnas Perlindungan Anak</h4>
-              <p><IoLocationSharp size={20}/>Jl. Teuku Umar No. 10 Gondangdia Menteng Jakarta Pusat DKI Jakarta, Indonesia </p>
+              <p>
+                <IoLocationSharp size={20} />
+                Jl. Teuku Umar No. 10 Gondangdia Menteng Jakarta Pusat DKI Jakarta, Indonesia{' '}
+              </p>
             </div>
             <hr></hr>
             <div className="contact-list">

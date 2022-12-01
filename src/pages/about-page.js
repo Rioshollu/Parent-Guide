@@ -1,11 +1,11 @@
-import React, { useEffect } from "react";
-import { Row, Col, Container, Spinner } from "react-bootstrap";
-import bannerImage from "../assets/banner1.png";
-import supportImage from "../assets/support.jpg";
-import imgNyayu from "../assets/imgNyayu.jpg";
-import imgGhalib from "../assets/ghalib.jpg";
-import imgJesslyn from "../assets/Jesslyn.jpg";
-import imgRio from "../assets/ImgRio.jpg";
+import React, { useEffect } from 'react';
+import { Row, Col, Container, Spinner } from 'react-bootstrap';
+import bannerImage from '../assets/banner1.png';
+import supportImage from '../assets/support.jpg';
+import imgNyayu from '../assets/img-nyayu.jpg';
+import imgGhalib from '../assets/img-ghalib.jpg';
+import imgJesslyn from '../assets/img-jesslyn.jpg';
+import imgRio from '../assets/img-rio.jpg';
 
 function AboutPage() {
   const [initializing, setInitializing] = React.useState(true);
@@ -35,8 +35,11 @@ function AboutPage() {
           <Col className="about-tagline">
             <div>
               <p>
-                <strong>Parent Guide</strong> adalah platform digital untuk orang tua di Indonesia yang berisikan informasi, tips, dan trik dalam mengasuh anak. <br />
-                Visi dari Parent Guide adalah menjadi portal berita parenting yang paling mengerti kebutuhan orang tua dalam menjalani kehidupannya sebagai aspek yang berperan penting dalam pertumbuhan anak.
+                <strong>Parent Guide</strong> adalah platform digital untuk orang tua di Indonesia
+                yang berisikan informasi, tips, dan trik dalam mengasuh anak. <br />
+                Visi dari Parent Guide adalah menjadi portal berita parenting yang paling mengerti
+                kebutuhan orang tua dalam menjalani kehidupannya sebagai aspek yang berperan penting
+                dalam pertumbuhan anak.
               </p>
             </div>
           </Col>
@@ -57,19 +60,28 @@ function AboutPage() {
           <Col>
             <div>
               <h3>Mudah Digunakan</h3>
-              <p>Parent Guide dirancang semaksimal mungkin agar dapat diakses oleh berbagai kalangan dan sangat mudah digunakan.</p>
+              <p>
+                Parent Guide dirancang semaksimal mungkin agar dapat diakses oleh berbagai kalangan
+                dan sangat mudah digunakan.
+              </p>
             </div>
           </Col>
           <Col>
             <div>
               <h3>Informasi Terpercaya</h3>
-              <p>Kekuatan Parent Guide yang menjadi sumber terpercaya informasi mengenai pola asuh pada anak yang bersumber dari jurnal - jurnal terpercaya.</p>
+              <p>
+                Kekuatan Parent Guide yang menjadi sumber terpercaya informasi mengenai pola asuh
+                pada anak yang bersumber dari jurnal - jurnal terpercaya.
+              </p>
             </div>
           </Col>
           <Col>
             <div>
               <h3>Bebas Akses Kapan Saja</h3>
-              <p>Parent Guide dapat diakses melalui berbagai device, sehingga sangat memudahkan orang tua untuk tetap mendapatkan informasi mengenai pola asuh dimanapun dan kapanpun.</p>
+              <p>
+                Parent Guide dapat diakses melalui berbagai device, sehingga sangat memudahkan orang
+                tua untuk tetap mendapatkan informasi mengenai pola asuh dimanapun dan kapanpun.
+              </p>
             </div>
           </Col>
         </Row>
@@ -80,10 +92,13 @@ function AboutPage() {
             <div className="pg-container">
               <h2>We Love Parent Guide</h2>
               <p>
-                Semua orang tua tentunya berharap bahwa anak-anak mereka akan tumbuh menjadi manusia yang penuh perhatian dan menyenangkan yang membuat pilihan-pilihan hebat. Tentunya untuk meraih hal seperti itu diperlukan pola asuh yang
-                sesuai.
+                Semua orang tua tentunya berharap bahwa anak-anak mereka akan tumbuh menjadi manusia
+                yang penuh perhatian dan menyenangkan yang membuat pilihan-pilihan hebat. Tentunya
+                untuk meraih hal seperti itu diperlukan pola asuh yang sesuai.
                 <br />
-                Kami tahu bahwa mengasuh anak adalah pekerjaan tersulit yang pernah dilakukan, dan kami hadir di sini untuk memastikan bahwa orang tua di Indonesia memiliki pengetahuan yang lebih mengenai pola asuh pada anak.
+                Kami tahu bahwa mengasuh anak adalah pekerjaan tersulit yang pernah dilakukan, dan
+                kami hadir di sini untuk memastikan bahwa orang tua di Indonesia memiliki
+                pengetahuan yang lebih mengenai pola asuh pada anak.
               </p>
             </div>
           </Col>
@@ -104,7 +119,11 @@ function AboutPage() {
               <div className="creator-desc">
                 <h3>Ghalib Hani Pratama</h3>
                 <h5>The Developer</h5>
-                <p>Hallo saya Ghalib Hani, saya merupakan orang yang bertanggung jawab pada tampilan Front End website Parent Guide. Saya berharap Parent Guide bisa membantu orang tua di Indonesia dalam mendidik dan merawat anak.</p>
+                <p>
+                  Hallo saya Ghalib Hani, saya merupakan orang yang bertanggung jawab pada tampilan
+                  Front End website Parent Guide. Saya berharap Parent Guide bisa membantu orang tua
+                  di Indonesia dalam mendidik dan merawat anak.
+                </p>
               </div>
             </div>
 
@@ -116,8 +135,9 @@ function AboutPage() {
                 <h3>Jesslyn Lim</h3>
                 <h5>The Developer</h5>
                 <p>
-                  Hallo saya Jesslyn, saya yang bertanggung jawab terhadap data Back End website Parent Guide dan turut membantu styling tampilan. Saya berharap Parent Guide bisa menjadi platform andalan ilmu parenting untuk orang tua di
-                  luar sana.
+                  Hallo saya Jesslyn, saya yang bertanggung jawab terhadap data Back End website
+                  Parent Guide dan turut membantu styling tampilan. Saya berharap Parent Guide bisa
+                  menjadi platform andalan ilmu parenting untuk orang tua di luar sana.
                 </p>
               </div>
             </div>
@@ -132,8 +152,9 @@ function AboutPage() {
                 <h3>Nyayu Maharani</h3>
                 <h5>The Researcher</h5>
                 <p>
-                  Hallo saya Nyayu Maharani, saya merupakan researcher yang bertanggung jawab dalam isi konten dan juga riset mengenai website. Saya berharap Parent Guide dapat menjadi website yang berperan penting dalam pertumbuhan anak di
-                  Indonesia.
+                  Hallo saya Nyayu Maharani, saya merupakan researcher yang bertanggung jawab dalam
+                  isi konten dan juga riset mengenai website. Saya berharap Parent Guide dapat
+                  menjadi website yang berperan penting dalam pertumbuhan anak di Indonesia.
                 </p>
               </div>
             </div>
@@ -146,8 +167,9 @@ function AboutPage() {
                 <h3>Rio Shollu Saputra</h3>
                 <h5>The Developer</h5>
                 <p>
-                  Hallo saya Rio Shollu, saya yang bertanggung jawab dalam pembuatan logo dari parent guide dan tampilan Front End website Parent Guide. Saya berharap Parent Guide menjadi platform yang nyaman digunakan oleh para orang tua
-                  di indonesia.
+                  Hallo saya Rio Shollu, saya yang bertanggung jawab dalam pembuatan logo dari
+                  parent guide dan tampilan Front End website Parent Guide. Saya berharap Parent
+                  Guide menjadi platform yang nyaman digunakan oleh para orang tua di indonesia.
                 </p>
               </div>
             </div>

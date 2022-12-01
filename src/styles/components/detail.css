@@ -37,3 +37,7 @@ li {
 .detail-img-source {
   font-size: small;
 }
+
+.spinner-grow {
+  color: var(--hr);
+}

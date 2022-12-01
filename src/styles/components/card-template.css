@@ -43,7 +43,7 @@ a[href] {
   text-decoration: none;
 }
 
-.article-container{
+.article-container {
   width: 16rem;
   padding: 0 !important;
   border-radius: 5px;
@@ -67,18 +67,18 @@ a[href] {
   text-align: center;
 }
 
-.indicator > .spinner-grow {
+.indicator>.spinner-grow {
   margin: 10px 5px;
 }
 
 @media screen and (min-width: 425px) {
-  .article-container{
+  .article-container {
     width: 18rem;
   }
 }
 
 @media screen and (min-width: 1020px) {
-  .article-container{
+  .article-container {
     width: 22rem;
   }
 }

@@ -1,4 +1,3 @@
-/* Hero */
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../../assets/hero-image.PNG");
   height: 300px;
@@ -20,11 +19,6 @@
 .hero-text h1 {
   font-weight: 600;
 }
-
-/* Artikel */
-/* .card {
-  border: none !important;
-} */
 
 .card-title {
   font-weight: bold !important;
@@ -72,7 +66,7 @@
   text-align: left;
 }
 
-.title-contact > h4 {
+.title-contact>h4 {
   text-decoration: underline;
 }
 

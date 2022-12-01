@@ -22,7 +22,7 @@
   --color: #28362f;
   --color-about-vm: #7d7d7d;
   --hr: black;
-  --button: #28362f ;
+  --button: #28362f;
   --img-content: url("../../public/logo-dark.svg");
   --card-bg: #ffffff;
   --card-text-bg: #395144;
@@ -53,6 +53,6 @@ main {
   background-color: var(--on-background-color);
 }
 
-.indicator > p {
+.indicator>p {
   color: var(--hr);
 }

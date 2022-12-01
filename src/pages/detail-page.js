@@ -17,15 +17,15 @@ function DetailPage() {
     fetchArticle();
     setInitializing(false);
   }, [id]);
-  
+
   if (initializing === true || article === undefined) {
     return (
-      <div className='indicator'>
+      <div className="indicator">
         <Spinner animation="grow" />
         <Spinner animation="grow" />
         <Spinner animation="grow" />
       </div>
-    )
+    );
   }
 
   return (
