@@ -8,10 +8,12 @@
 .detail-title {
   letter-spacing: 3px;
   font-size: xx-large;
+  color: var(--hr);
 }
 
 .detail-overview {
   margin: 0 auto;
+  color: var(--hr);
 }
 
 .detail-credit {
