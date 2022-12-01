@@ -3,6 +3,7 @@ import { Row, Col, Container, Spinner } from 'react-bootstrap';
 import bannerImage from '../assets/banner1.png';
 import supportImage from '../assets/support.jpg';
 import people from '../assets/people.png';
+import imgNyayu from '../assets/imgNyayu.jpg';
 
 function AboutPage() {
   const [initializing, setInitializing] = React.useState(true);
@@ -143,7 +144,7 @@ function AboutPage() {
         <Col>
           <div className="creator-container">
             <div className="creator-image">
-              <img src={people} alt="people"></img>
+              <img src={imgNyayu} alt="people"></img>
             </div>
             <div className="creator-desc">
               <h3>Nyayu Maharani</h3>
