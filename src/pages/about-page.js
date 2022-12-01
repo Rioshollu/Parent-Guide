@@ -5,6 +5,7 @@ import supportImage from "../assets/support.jpg";
 import people from "../assets/people.png";
 import imgNyayu from "../assets/imgNyayu.jpg";
 import imgGhalib from "../assets/ghalib.jpg";
+import imgJesslyn from "../assets/Jesslyn.jpg";
 
 function AboutPage() {
   const [initializing, setInitializing] = React.useState(true);
@@ -109,7 +110,7 @@ function AboutPage() {
 
             <div className="creator-container">
               <div className="creator-image">
-                <img src={people} alt="people"></img>
+                <img src={imgJesslyn} alt="people"></img>
               </div>
               <div className="creator-desc">
                 <h3>Jesslyn Lim</h3>
