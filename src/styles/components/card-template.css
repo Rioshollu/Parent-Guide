@@ -43,38 +43,19 @@ a[href] {
   text-decoration: none;
 }
 
-a[href]:visited {
-  text-decoration: none;
-  color: #ffffff;
-}
-a[href]:hover {
-  text-decoration: none;
-  color: var(--card-text-bg);
-}
-
-.article-box{
-  background-color: var(--card-bg);
-  border-radius: 0 0 5px 5px;
-}
-
-.article-box > .article-header{
-  color: var(--card-header-text-color);
-  background-color: var(--card-header-bg-color);
-  border-radius: 0px !important;
-}
-
 .article-container{
   width: 16rem;
   padding: 0 !important;
-  color: var(--card-bg);
+  border-radius: 5px;
+  color: var(--card-header-text-color);
+  margin: 0 auto;
+  background-color: var(--card-header-bg-color);
 }
 
-.article-container:hover, 
-.article-box:hover{
+.article-container:hover {
   box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.4);
-  /* background-color: var(--card-text-bg); */
   background-color: var(--card-hover-color);
-  color: #ffffff;
+  color: var(--card-bg);
 }
 
 .article-content-container {

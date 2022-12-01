@@ -16,7 +16,7 @@
 .button-container>.btn:hover {
     background-color: var(--cat-button-outline);
     color: #FFFFFF;
-    border: 1px solid #AA8B56;
+    border: 1px solid var(--cat-button-outline);
 }
 
 @media screen and (min-width: 1100px) {

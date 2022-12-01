@@ -7,20 +7,22 @@ function CardTemplate({ article }) {
       <Col className="card-container">
         <Card className="article-container">
           <Link to={`/article/detail/${article.article_id}`}>
-            <Card.Img variant="top" src={article.article_image_url} className="article-image" />
-            <div className='article-box'>
-              <Card.Header className="article-header">{article.article_category}</Card.Header>
-              <Card.Body>
-                <Card.Title className="article-title">{article.article_title}</Card.Title>
-                <div className="article-content-container">
-                  <span className="article-rating mb-2 text-muted">
-                    ⭐️{article.article_rating}
-                  </span>
-                  <span className="article-date mb-2 text-muted">
-                    {article.article_release_date}
-                  </span>
-                </div>
-              </Card.Body>
+            <div className="article-container">
+              <Card.Img variant="top" src={article.article_image_url} className="article-image" />
+              <div className="article-box">
+                <Card.Header className="article-header">{article.article_category}</Card.Header>
+                <Card.Body>
+                  <Card.Title className="article-title">{article.article_title}</Card.Title>
+                  <div className="article-content-container">
+                    <span className="article-rating mb-2 text-muted">
+                      ⭐️{article.article_rating}
+                    </span>
+                    <span className="article-date mb-2 text-muted">
+                      {article.article_release_date}
+                    </span>
+                  </div>
+                </Card.Body>
+              </div>
             </div>
           </Link>
         </Card>
